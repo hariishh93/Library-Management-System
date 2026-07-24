@@ -104,6 +104,13 @@ l1:
         printf("Enter Book Name : ");
         scanf(" %49[^\n]", s);
 
+	if(*s=='\0')
+	{
+		printf("No input entered....\n");
+		return;
+	}
+
+
         s1 = s;
 
         while (*s1)
@@ -130,7 +137,7 @@ l1:
 
             s2[i] = '\0';
 
-            if (strcmp(s2, s) == 0)
+            if (strstr(s2, s) != NULL)
             {
                 printf("-------------------------------------\n");
                 printf("ID       : %d\n", t->id);
