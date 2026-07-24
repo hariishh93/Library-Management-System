@@ -91,7 +91,7 @@ l3:
 
             s2[i] = '\0';
 
-            if (strcmp(s2, s) == 0)
+            if (strstr(s2, s) != NULL)
             {
                 printf("---------------------------------------------\n");
                 printf("Book ID   : %d\n", temp->id);
@@ -143,7 +143,7 @@ l3:
 
             s2[i] = '\0';
 
-            if (strcmp(s2, s) == 0)
+            if (strstr(s2, s) != NULL)
             {
                 printf("---------------------------------------------\n");
                 printf("Book ID   : %d\n", temp->id);
